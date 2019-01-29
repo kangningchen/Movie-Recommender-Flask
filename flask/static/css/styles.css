@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Raleway');
+
+/*CSS Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    position: relative;
+}
+
+div.header {
+    background-color: #abbaba;
+    margin-bottom: 3em;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+    padding: .5em;
+    font-size: 4em;
+    text-align: center;
+}
+
+a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #00e6ac;
+    padding: .5em;
+    border-radius: 10px;
+    border: 2px solid #00e6ac;
+    background-color: #fff;
+}
+
+a:hover {
+    color:#fff;
+    border: 2px solid #00e6ac;
+    background-color: #00e6ac;  
+}
+
+p {
+    font-size: 1.5em;
+    padding: 0 3em;
+    margin-bottom: 2em;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    font-size: 2em;
+    width: 80%;
+    border-radius: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 2%;
+    color: #555;    
+    font: 95% 'Raleway', Arial, Helvetica, sans-serif;
+
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;  
+    font-size: 2em;
+    color: #00e6ac;
+    padding: .5em;
+    border-radius: 10px;
+    border: 2px solid #00e6ac;
+    background-color: #fff;
+}
+
+input[type="submit"]:hover {
+    color:#fff;
+    border: 2px solid #00e6ac;
+    background-color: #00e6ac;   
+}
+
+h1.result {
+    color: black;
+}
+
+.grid-container {
+    width: 70%;
+    margin: 0 auto;
+    border: 10px solid #00e6ac;;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10% 5% 85%;
+    margin-bottom: 1em; 
+    padding: 1em;
+}
+
+.query {
+    border: 10px solid #abbaba; 
+}
+
+
+.grid-container img {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.grid-container p {
+    font-size: 1.3em;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: left;
+}
+
+.grid-container h2 {
+    font-size: 2em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: .3em;
+}
+
+

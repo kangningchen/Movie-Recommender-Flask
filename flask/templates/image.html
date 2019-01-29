@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+    <title>Image-Based Movie Recommender</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Image-Based Movie Recommender</h1>
+    </div>
+    <p>To start, enter the name of a movie you enjoy. Here's how it works:
+        we recommend movies based on how closely their posters resemble that of
+        the target movie (your input). We make the assumption that people would
+        likely enjoy movies that have posters that share similar visual patterns,
+        because these movies are often from the same genre or share similar plots.
+        Doubtful? Try it out! 
+    </p> 
+    <form action="/image-result" method="POST">
+        <input type="text" name="original-title" placeholder="Toy Story"/><br>
+        <input type="submit" value="Find Me Recommendations!"/>
+    </form>
+</body>
+</html>
